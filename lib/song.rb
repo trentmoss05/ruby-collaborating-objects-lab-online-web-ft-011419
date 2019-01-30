@@ -11,7 +11,6 @@ class Song
     artist = Artist.new(artist_and_song[0]).save
     song = self.new(artist_and_song[1])
     song.artist = artist
-    artist.add_song(song)
     song
   end
 
